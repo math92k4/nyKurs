@@ -564,6 +564,7 @@ header .gitter {
 
 #mode_switch span {
   text-decoration: underline;
+  color: #bdcf9a;
 }
 
 .header_clr,
