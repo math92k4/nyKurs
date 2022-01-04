@@ -8,12 +8,33 @@ input[type="email"] {
   border-bottom: $main_bdr $purple;
 }
 
+#fil_label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 90%;
+  max-width: 90%;
+  resize: vertical;
+  margin-left: var(--main_margin);
+  margin-right: var(--main_margin);
+  min-height: 20ch;
+  font-family: sans-serif;
+  padding: 2ch;
+  font-size: 1rem;
+  border: 2px solid $purple;
+  background-color: $bg_color;
+}
+
 // frivillig form
 
 #form_wrapper {
   display: flex;
   flex-direction: column;
   width: 80%;
+  min-width: 50vw;
+  justify-content: space-between;
 }
 #frivillig_signup {
   background-color: $bg_color;
@@ -29,7 +50,7 @@ input[type="email"] {
   }
   & input {
     padding: 0 var(--main_margin);
-    margin: var(--main_margin) 20px;
+    margin: var(--hlf_margin) 20px calc(1.5 * var(--main_margin)) 20px;
     font-size: var(--para);
 
     &[type="text"],
@@ -86,10 +107,10 @@ input[type="email"] {
   & label {
     margin-left: 20px;
   }
+}
 
-  & #fil_label {
-    margin-top: 50px;
-  }
+#frivillig_omraade label {
+  margin-right: var(--main_margin);
 }
 
 @media (min-width: $desktop) {
@@ -101,12 +122,12 @@ input[type="email"] {
   }
   #form_wrapper {
     flex-direction: row;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     width: 100%;
   }
   fieldset {
-    width: 50%;
+    // width: 50%;
   }
 }
 

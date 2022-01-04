@@ -30,11 +30,14 @@
   <label for="omraade_program" class="radio_label">Program</label><br>
 <input type="radio" id="omraade_sikkerhed" name="omraade" value="sikkerhed" required>
   <label for="omraade_sikkerhed" class="radio_label">Sikkerhed</label><br>
-<label for="file" id="fil_label">Motiveret ansøgning</label>
-<input type="text" name="frivillig_fil" id="frivillig_fil" required> 
-
 </fieldset>
 </div>
+
+<fieldset>
+<label for="file" id="fil_label">Motiveret ansøgning</label>
+<textarea type="text" name="frivillig_fil" id="frivillig_fil" required> </textarea>
+</fieldset>
+
 <div id="submit_wrapper">
 <input type="submit" value="SEND" id="submit_frivillig_form">
 </div>
