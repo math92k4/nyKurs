@@ -31,7 +31,7 @@
 <input type="radio" id="omraade_sikkerhed" name="omraade" value="sikkerhed" required>
   <label for="omraade_sikkerhed" class="radio_label">Sikkerhed</label><br>
 <label for="file" id="fil_label">Motiveret ansøgning</label>
-<input type="file" name="frivillig_fil" id="frivillig_fil" required> 
+<input type="text" name="frivillig_fil" id="frivillig_fil" required> 
 
 </fieldset>
 </div>
