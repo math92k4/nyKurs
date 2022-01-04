@@ -1,5 +1,5 @@
 export function loadImgs() {
-  const pictures = document.querySelectorAll("picture:not(#splash picture)");
+  const pictures = document.querySelectorAll("picture:not(#splash picture, footer picture)");
   pictures.forEach((elm) => {
     const webpUrl = elm.dataset.image;
     const fallbackUrl = elm.dataset.fallback;

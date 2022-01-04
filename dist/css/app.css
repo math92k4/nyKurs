@@ -73,7 +73,7 @@ input {
   background-color: transparent;
 }
 
-.eco img:not(header img, #splash img) {
+.eco img:not(header img, #splash img, footer img) {
   display: none;
 }
 

@@ -150,7 +150,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "loadImgs": () => (/* binding */ loadImgs)
 /* harmony export */ });
 function loadImgs() {
-  var pictures = document.querySelectorAll("picture:not(#splash picture)");
+  var pictures = document.querySelectorAll("picture:not(#splash picture, footer picture)");
   pictures.forEach(function (elm) {
     var webpUrl = elm.dataset.image;
     var fallbackUrl = elm.dataset.fallback;

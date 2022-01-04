@@ -68,7 +68,7 @@ input {
 }
 
 .eco {
-  & img:not(header img, #splash img) {
+  & img:not(header img, #splash img, footer img) {
     display: none;
   }
 }
