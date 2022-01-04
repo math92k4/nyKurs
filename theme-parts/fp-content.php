@@ -44,8 +44,21 @@
                 ?>
                 
                 <li class="image">
-                <?php get_template_part("/theme-parts/gitter"); ?>
-                    <a href=" <?php echo $pods->field('link') ?> ">
+                <?php get_template_part("/theme-parts/gitter"); 
+                
+                if ($pods->field('blank')) { ?>
+
+                    <a href=" <?php echo $pods->field('link') ?>" target="_blank" >
+
+                <?php
+                } else { 
+                ?>
+
+                    <a href=" <?php echo $pods->field('link') ?>" >
+                    
+                <?php
+                }
+                ?>
 
                         <picture data-image="<?php echo $imgUrl?>"  data-fallback="<?php echo $fallbackUrl ?>">
                             <source srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" type="image/webp">
