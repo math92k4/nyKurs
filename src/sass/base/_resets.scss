@@ -1,0 +1,74 @@
+@import "../abstracts/";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: var(--selection);
+  color: white;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  cursor: pointer;
+}
+
+body {
+  background-color: $bg_color;
+}
+
+section {
+  padding: var(--main_margin);
+}
+
+::marker {
+  display: none;
+}
+summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:focus {
+  outline: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+button {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+fieldset,
+input {
+  border: none;
+  background-color: transparent;
+}
+
+.eco {
+  & img:not(header img, #splash img) {
+    display: none;
+  }
+}

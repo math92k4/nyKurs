@@ -1,0 +1,33 @@
+@import "../abstracts";
+
+details {
+  cursor: pointer;
+  &:not(:first-of-type) {
+    margin-top: var(--main_margin);
+  }
+
+  & summary {
+    padding: 20px var(--main_margin);
+    border: $main_bdr $orange;
+    position: relative;
+    &::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-image: url("../../imgs/arrow.png");
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  & p {
+    background-color: $orange;
+    padding: var(--main_margin);
+    max-width: none;
+  }
+}
+
+details[open] summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}

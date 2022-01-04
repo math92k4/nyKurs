@@ -1,0 +1,49 @@
+@import "../abstracts";
+
+section {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+iframe {
+  margin-top: var(--main_margin);
+}
+
+.content_wrapper {
+  & img {
+    max-width: 500px;
+    width: 100%;
+    margin: var(--main_margin) 0 var(--main_margin) auto;
+    border-radius: 20% 0 20% 0;
+  }
+
+  & p {
+    margin-top: var(--main_margin);
+  }
+
+  & video {
+    margin-left: var(--main_margin);
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .content_wrapper {
+    display: flex;
+
+    & img {
+      margin-top: 0;
+      padding-left: var(--main_margin);
+    }
+  }
+
+  .program section {
+    padding-left: 60px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content_wrapper video {
+    margin-top: var(--main_margin);
+    margin-left: 0;
+  }
+}

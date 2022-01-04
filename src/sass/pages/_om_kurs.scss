@@ -1,0 +1,77 @@
+@import "../abstracts";
+
+.om-kurs {
+  & main {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  & h1 {
+    margin: 0 var(--main_margin);
+  }
+  & .om_container {
+    width: 100%;
+  }
+  & img:not(footer img) {
+    border-radius: 0 100px 0 100px;
+  }
+
+  & article {
+    display: flex;
+    flex-direction: column;
+  }
+  & article div {
+    margin-top: calc(var(--main_margin) * 2);
+  }
+  & article div:nth-child(2n) {
+    align-self: flex-end;
+  }
+
+  & .side_menu {
+    & li {
+      margin-top: var(--main_margin);
+    }
+  }
+
+  & .current {
+    color: $purple;
+  }
+
+  & h2 {
+    margin-bottom: var(--hlf_margin);
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: 805px) {
+  .om-kurs {
+    & .side_menu {
+      & ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .om-kurs {
+    & .wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    & .side_menu {
+      position: sticky;
+      top: 100px;
+
+      & ul {
+        display: block;
+      }
+
+      & li {
+        text-align: right;
+      }
+    }
+  }
+}
