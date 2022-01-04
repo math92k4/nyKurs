@@ -109,6 +109,17 @@ textarea {
   }
 }
 
+#ansoegning_popup {
+  padding: calc(var(--main_margin) * 2);
+  border: $main_bdr $purple;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $bg_color;
+  display: none;
+}
+
 #frivillig_omraade label {
   margin-right: var(--main_margin);
 }
@@ -125,9 +136,6 @@ textarea {
     // justify-content: center;
     align-items: center;
     width: 100%;
-  }
-  fieldset {
-    // width: 50%;
   }
 }
 

@@ -1473,6 +1473,17 @@ textarea {
   margin-left: 20px;
 }
 
+#ansoegning_popup {
+  padding: calc(var(--main_margin) * 2);
+  border: 2px solid #e6b8f8;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f3ece9;
+  display: none;
+}
+
 #frivillig_omraade label {
   margin-right: var(--main_margin);
 }

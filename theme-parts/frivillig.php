@@ -34,7 +34,7 @@
 </div>
 
 <fieldset>
-<label for="file" id="fil_label">Motiveret ansøgning</label>
+<label for="fil" id="fil_label">Motiveret ansøgning</label>
 <textarea type="text" name="frivillig_fil" id="frivillig_fil" required> </textarea>
 </fieldset>
 
@@ -45,6 +45,9 @@
 
 </section>
 
+<div id="ansoegning_popup">
+<h2>Tak for din ansøgning!</h2>
+</div>
 
 <script>
 
@@ -88,7 +91,7 @@ function getValues() {
       frivillignavn: navn, 
       frivilligemail: email, 
       frivilligtelefon: telefon, 
-      frivilligfil: fil, 
+      frivilligansoegning: fil, 
       frivilligomraade: omraade,
   }
   post(data, url);
@@ -114,6 +117,12 @@ function getValues() {
 
 // formen tømmes for indhold efter den er sendt
 function emptyInputs() {
+
+// vis popup i tre sekunder 
+document.querySelector("#ansoegning_popup").style.display = "block";
+setTimeout(() => {
+  document.querySelector("#ansoegning_popup").style.display = "none"; 
+}, 3000); 
 
  const checkedRadio = document.querySelector("input[type=radio]:checked"); 
  checkedRadio.checked = false; 
