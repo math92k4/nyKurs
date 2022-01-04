@@ -31,7 +31,7 @@ export function addParamsToHrefClick() {
       const hrefUrl = this.getAttribute("href");
       setTimeout(() => {
         setUrlParam(hrefUrl, param);
-      }, 1500);
+      }, 1100);
     });
   });
 }

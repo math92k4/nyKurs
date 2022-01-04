@@ -204,7 +204,7 @@ function addParamsToHrefClick() {
       var hrefUrl = this.getAttribute("href");
       setTimeout(function () {
         setUrlParam(hrefUrl, param);
-      }, 1500);
+      }, 1100);
     });
   });
 }
