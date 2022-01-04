@@ -41,10 +41,10 @@ function modeSwitchSetup(param) {
   let switchParam = null;
   if (param == 0) {
     switchParam = 1;
-    switcher.querySelector("span").textContent = "grønne";
+    switcher.querySelector("span").textContent = "grønnere";
   } else {
     switchParam = 0;
-    switcher.querySelector("span").textContent = "grønnere";
+    switcher.querySelector("span").textContent = "grønne";
   }
 
   switcher.addEventListener("click", function (e) {
