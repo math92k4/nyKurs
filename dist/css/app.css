@@ -551,6 +551,21 @@ header .gitter {
   opacity: 1;
 }
 
+#mode_switch {
+  position: absolute;
+  bottom: var(--main_margin);
+  left: var(--main_margin);
+}
+
+#mode_switch a {
+  font-family: sans-serif;
+  font-size: var(--para);
+}
+
+#mode_switch span {
+  text-decoration: underline;
+}
+
 .header_clr,
 .loading {
   position: absolute;

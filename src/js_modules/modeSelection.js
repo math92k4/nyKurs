@@ -20,7 +20,9 @@ function setUrlParam(url, param) {
 
 export function addParamsToHrefClick() {
   const param = getUrlParam("eco");
-  const allH = document.querySelectorAll('a:not(a[target="_blank"])');
+  modeSwitchSetup(param);
+
+  const allH = document.querySelectorAll('a:not(a[target="_blank"], #mode_switch a)');
   allH.forEach((elm) => {
     console.log(elm);
     elm.addEventListener("click", function (e) {
@@ -31,5 +33,23 @@ export function addParamsToHrefClick() {
         setUrlParam(hrefUrl, param);
       }, 1500);
     });
+  });
+}
+
+function modeSwitchSetup(param) {
+  const switcher = document.querySelector("#mode_switch a");
+  let switchParam = null;
+  if (param == 0) {
+    switchParam = 1;
+    switcher.querySelector("span").textContent = "grønne";
+  } else {
+    switchParam = 0;
+    switcher.querySelector("span").textContent = "grønnere";
+  }
+
+  switcher.addEventListener("click", function (e) {
+    e.preventDefault();
+    const url = this.getAttribute("href");
+    window.location.href = url + "?eco=" + switchParam;
   });
 }

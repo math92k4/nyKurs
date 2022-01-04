@@ -114,6 +114,21 @@ header {
   }
 }
 
+#mode_switch {
+  position: absolute;
+  bottom: var(--main_margin);
+  left: var(--main_margin);
+
+  & a {
+    font-family: sans-serif;
+    font-size: var(--para);
+  }
+
+  & span {
+    text-decoration: underline;
+  }
+}
+
 //
 //
 // ----- HEADER COLORS EFFECT -----

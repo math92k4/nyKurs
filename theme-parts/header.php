@@ -23,6 +23,10 @@
                     )
                 )
                 ?>
+
+                <div id="mode_switch">
+                    <a href="http://rasmuskmoller.dk/kursfestival1">Skift til den <span></span> version</a>
+                </div>
             </div>
             
         </nav>
