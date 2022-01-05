@@ -22,19 +22,27 @@
 
 
 <fieldset id="frivillig_omraade">
+  <div class="form_ctrl2">
 <input type="radio" id="omraade_kommunikation" name="omraade" value="kommunikation" required>
   <label for="omraade_kommunikation" class="radio_label">Kommunikation</label><br>
+</div>
+<div class="form_ctrl2">
 <input type="radio" id="omraade_booking" name="omraade" value="booking" required>
   <label for="omraade_program" class="radio_label">Booking</label><br>
+</div>
+<div class="form_ctrl2">
 <input type="radio" id="omraade_program" name="omraade" value="program" required>
   <label for="omraade_program" class="radio_label">Program</label><br>
+</div>
+<div class="form_ctrl2">
 <input type="radio" id="omraade_sikkerhed" name="omraade" value="sikkerhed" required>
   <label for="omraade_sikkerhed" class="radio_label">Sikkerhed</label><br>
+</div>
 </fieldset>
 </div>
 
 <fieldset>
-<label for="fil" id="fil_label">Motiveret ansøgning</label>
+<label for="fil" id="fil_label">Hvorfor vil du være frivillig på Kurs?</label>
 <textarea type="text" name="frivillig_fil" id="frivillig_fil" required> </textarea>
 </fieldset>
 

@@ -39,6 +39,14 @@ tr {
   display: flex;
 }
 
+td {
+  text-transform: capitalize;
+}
+
+.caption {
+  text-transform: uppercase;
+}
+
 td,
 th {
   flex: 1;
@@ -50,6 +58,7 @@ th {
   font-weight: 500;
   font-size: 1.5rem;
   background-color: var(--bd-clr);
+  text-transform: uppercase;
 }
 td:not(:first-child),
 th:not(:first-child) {

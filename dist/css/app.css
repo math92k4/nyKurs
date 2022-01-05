@@ -1265,6 +1265,14 @@ tr {
   display: flex;
 }
 
+td {
+  text-transform: capitalize;
+}
+
+.caption {
+  text-transform: uppercase;
+}
+
 td,
 th {
   flex: 1;
@@ -1277,6 +1285,7 @@ th {
   font-weight: 500;
   font-size: 1.5rem;
   background-color: var(--bd-clr);
+  text-transform: uppercase;
 }
 
 td:not(:first-child),
@@ -1421,6 +1430,12 @@ textarea {
   display: grid;
 }
 
+#frivillig_signup .form_ctrl2 {
+  display: flex;
+  align-items: center;
+  margin: var(--hlf_margin) 20px calc(1.5 * var(--main_margin)) 20px;
+}
+
 #frivillig_signup fieldset {
   padding: var(--main_margin);
   margin-top: 20px;
@@ -1436,6 +1451,15 @@ textarea {
   width: 100%;
 }
 
+#frivillig_signup input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
 #frivillig_signup input#frivillig_fil {
   margin: 0;
 }
@@ -1444,7 +1468,7 @@ textarea {
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  top: -2px;
+  top: 2px;
   left: -1px;
   position: relative;
   background-color: #f3ece9;
@@ -1458,7 +1482,7 @@ textarea {
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  top: -2px;
+  top: 2px;
   left: -1px;
   position: relative;
   background-color: #e6b8f8;
@@ -1475,6 +1499,9 @@ textarea {
 }
 
 #frivillig_signup #submit_wrapper input[type=submit] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: #e6b8f8;
   color: #f3ece9;
   margin-top: 40px;
