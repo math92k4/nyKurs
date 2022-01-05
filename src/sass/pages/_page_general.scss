@@ -23,6 +23,7 @@ iframe {
 
   & video {
     margin-left: var(--main_margin);
+    width: 90%;
   }
 }
 
@@ -45,5 +46,6 @@ iframe {
   .content_wrapper video {
     margin-top: var(--main_margin);
     margin-left: 0;
+    width: 100%;
   }
 }
