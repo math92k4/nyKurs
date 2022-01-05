@@ -36,6 +36,14 @@ header {
     transform: translateY(-50%);
     border: $half_bdr $purple;
     max-width: 500px;
+
+    & span {
+      transition: background-color 0.5s $easeio;
+
+      &:hover {
+        transition: background-color 0.1s $easeio;
+      }
+    }
   }
 }
 

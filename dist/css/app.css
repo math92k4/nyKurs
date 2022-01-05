@@ -476,6 +476,14 @@ header .gitter {
   max-width: 500px;
 }
 
+header .gitter span {
+  transition: background-color 0.5s cubic-bezier(0.77, 0, 0.24, 1);
+}
+
+header .gitter span:hover {
+  transition: background-color 0.1s cubic-bezier(0.77, 0, 0.24, 1);
+}
+
 .header_margin {
   padding-top: 60px;
 }

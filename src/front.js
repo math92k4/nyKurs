@@ -8,6 +8,7 @@ import { gitterAspectRatio } from "./js_modules/gitter_aspect.js";
 import { loadImgs } from "./js_modules/loadImgs.js";
 import { setHundredVh } from "./js_modules/hundredvh.js";
 import { getUrlParam, showModePopUp, addParamsToHrefClick } from "./js_modules/modeSelection.js";
+import { menuGitterAniSetup } from "./js_modules/menuGitterAni.js";
 
 window.addEventListener("DOMContentLoaded", init);
 
@@ -32,6 +33,7 @@ async function init() {
 
       if (window.innerWidth > 600) {
         cursor();
+        menuGitterAniSetup();
       }
       moveElm();
       randomizeSelection();
