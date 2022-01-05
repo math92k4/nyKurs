@@ -24,7 +24,6 @@ export function addParamsToHrefClick() {
 
   const allH = document.querySelectorAll('a:not(a[target="_blank"], #mode_switch a)');
   allH.forEach((elm) => {
-    console.log(elm);
     elm.addEventListener("click", function (e) {
       e.preventDefault();
       document.querySelector(".loading").classList.add("open");

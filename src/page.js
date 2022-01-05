@@ -5,6 +5,7 @@ import { gitterAspectRatio } from "./js_modules/gitter_aspect";
 import { loadImgs } from "./js_modules/loadImgs.js";
 import { setHundredVh } from "./js_modules/hundredvh.js";
 import { getUrlParam, showModePopUp, addParamsToHrefClick } from "./js_modules/modeSelection.js";
+import { menuGitterAniSetup } from "./js_modules/menuGitterAni.js";
 
 window.addEventListener("DOMContentLoaded", init);
 
@@ -24,6 +25,7 @@ function init() {
     if (eco == 0) {
       if (window.innerWidth > 600) {
         cursor();
+        menuGitterAniSetup();
       }
       loadImgs();
       randomizeSelection();
